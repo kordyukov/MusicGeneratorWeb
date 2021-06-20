@@ -11,8 +11,8 @@ public class RandomNotes {
     int i = 0;
     public int RandomNotes()
     {
-        int random = 0 + (int) (Math.random() * 5);
-        int random1 = 0 + (int) (Math.random() * 5);
+        int random = 0 + (int) (Math.random() * 10);
+        int random1 = 0 + (int) (Math.random() * 10);
 
         if (random == random1) {
             return this.NoteBass = notes[0 + (int) (Math.random() * 20)];
@@ -20,7 +20,7 @@ public class RandomNotes {
             while(i<=random+random1){
                 i++;
             return  36;}
-            return  36;
+            return  45;
         }
     }
 

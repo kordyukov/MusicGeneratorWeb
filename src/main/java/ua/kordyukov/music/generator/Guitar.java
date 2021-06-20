@@ -10,7 +10,7 @@ public class Guitar implements Runnable {
   private int chanel = 6;
   private int guitar = 1;
   static private int note = 36;
-  private int rytm = 100;
+  private int rytm = 25;
 
   RandomRythm rythmGuitar = new RandomRythm();
   RandomNotesGuitar randomNotesGuitar = new RandomNotesGuitar();

@@ -67,16 +67,16 @@ public class RandomRythm {
     }
 
     public int RythmGuitar(){
-        int random = 0 + (int) (Math.random() * 1);
-        int random1 = 0 + (int) (Math.random() * 1);
+//        int random = 0 + (int) (Math.random() * 1);
+//        int random1 = 0 + (int) (Math.random() * 1);
 
 
-        if (random == random1) {
-            return this.indexGuitar = rythmGuitar[0 + (int) (Math.random() * 4)];
-        }
-        else {
-            return this.indexGuitar;
-        }
+        //if (random == random1) {
+            return this.indexGuitar = 25 + ((int) (Math.random() * 800));
+//        }
+//        else {
+//            return this.indexGuitar;
+//        }
     }
 
 }

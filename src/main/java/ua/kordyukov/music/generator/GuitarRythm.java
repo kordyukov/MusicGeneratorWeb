@@ -7,7 +7,7 @@ import javax.sound.midi.Synthesizer;
 
 public class GuitarRythm implements Runnable {
 
-    private int volume = 65;
+    private int volume = 55;
     private int chanel = 6;
     private int guitar = 25;
     Bass note = new Bass();
@@ -25,9 +25,11 @@ public class GuitarRythm implements Runnable {
 
             channels[chanel].noteOn(note.getNote(), volume);
                 channels[chanel].noteOn(randomNotesGuitar.RandomNotes(), volume);
+                channels[chanel].noteOn(randomNotesGuitar.RandomNotes(), volume);
 
             Thread.sleep(note.getRytm()); // in milliseconds
             channels[chanel].noteOff(note.getNote());
+                channels[chanel].noteOff(randomNotesGuitar.RandomNotes());
                 channels[chanel].noteOff(randomNotesGuitar.RandomNotes());
             synth.close();
             } catch (Exception e) {

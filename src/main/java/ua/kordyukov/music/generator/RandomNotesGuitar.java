@@ -18,8 +18,9 @@ public class RandomNotesGuitar {
         } else {
             while(i<=random+random1){
                 i++;
-                return  48;}
-            return  57;
+                return  notes[0 + (int) (Math.random() * 27)];
+            }
+            return  notes[0 + (int) (Math.random() * 27)];
         }
         //return 60;
     }
