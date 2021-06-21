@@ -1,8 +1,10 @@
 <html>
+<body bgcolor="#05CF14">
 <body>
-<h2>Music Generator</h2>
 
-<p><a href="http://localhost:8080/MusicGenerator/Start">Music Generator Start</a></p>
+<h1 align="center">Music Generator</h1>
+
+<p align="center"><a href="http://localhost:8080/MusicGenerator/Start" circle>Music Generator Start</a></p>
 
 
 </body>
