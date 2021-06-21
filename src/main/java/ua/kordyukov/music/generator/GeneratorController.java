@@ -7,16 +7,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import ua.kordyukov.music.generator.Bass;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Controller
 @RequestMapping("/MusicGenerator")
 public class GeneratorController {
+
+
     ThreadKick threadKick = new ThreadKick();
     ThreadSnare threadSnare = new ThreadSnare();
     ThreadHat threadHat = new ThreadHat();
     ThreadBass threadBass = new ThreadBass();
 
-    Guitar guitar = new Guitar();
-    Thread threadGuitar = new Thread(guitar);
+     Guitar guitar = new Guitar();
+     Thread threadGuitar = new Thread(guitar);
 
     GuitarRythm guitarRythm = new GuitarRythm();
     Thread threaGuitarRythm = new Thread(guitarRythm);
@@ -24,6 +29,8 @@ public class GeneratorController {
 
     @GetMapping("/Start")
     public String GeneratorHello() {
+
+
         threadKick.start();
         threadSnare.start();
         threadHat.start();
@@ -173,6 +180,24 @@ public class GeneratorController {
             }
             return "MusicGenerator/garmonic";
         }
+    }
+
+    @GetMapping("/OnOff")
+    public String OnOff(@RequestParam("on")String on,Model model)  {
+        model.addAttribute("onof",on);
+
+        switch (on){
+            case "Stop" :
+                threadGuitar.suspend();
+                break;
+            case "Start" :
+                threadGuitar.resume();
+                break;
+
+
+        }
+
+        return "MusicGenerator/OnOff";
     }
 
 

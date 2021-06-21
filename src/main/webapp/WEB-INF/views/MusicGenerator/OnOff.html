@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" lang="en">
 
 <head>
   <meta charset="ISO-8859-1">
@@ -11,10 +10,11 @@
 
 <p>Greets You Music Generator by Kordyukov</p>
 
+
 <p th:text = "${onof}"></p>
 <p><a href="http://localhost:8080/MusicGenerator/OnOff?on=Stop">Off Piano Solo</a></p>
 <p><a href="http://localhost:8080/MusicGenerator/OnOff?on=Start">On Piano Solo</a></p>
-
+</br>
 <p>Garmonic is:</p>
 <p th:text = "${ton}"></p>
 

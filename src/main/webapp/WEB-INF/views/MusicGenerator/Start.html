@@ -4,12 +4,16 @@
 
 <head>
     <meta charset="ISO-8859-1">
-    <title>My app</title>
+    <title>Music Generator</title>
 </head>
 
 <body>
 
 <p>Greets You Music Generator by Kordyukov</p>
+
+<p th:text = "${onof}"></p>
+<p><a href="http://localhost:8080/MusicGenerator/OnOff?on=Stop">Off Piano Solo</a></p>
+<p><a href="http://localhost:8080/MusicGenerator/OnOff?on=Start">On Piano Solo</a></p>
 
 <p>Garmonic is:</p>
 <p th:text = "${ton}"></p>
