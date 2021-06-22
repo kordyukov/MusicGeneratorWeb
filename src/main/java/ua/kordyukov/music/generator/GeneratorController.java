@@ -26,6 +26,9 @@ public class GeneratorController {
     GuitarRythm guitarRythm = new GuitarRythm();
     Thread threaGuitarRythm = new Thread(guitarRythm);
 
+    Pad pad = new Pad();
+    Thread threadPad = new Thread(pad);
+
 
     @GetMapping("/Start")
     public String GeneratorHello() {
@@ -36,7 +39,10 @@ public class GeneratorController {
         threadHat.start();
         threadBass.start();
         threadGuitar.start();
+        threadGuitar.suspend();
         threaGuitarRythm.start();
+        threadPad.start();
+
 
         return "MusicGenerator/Start";
 
