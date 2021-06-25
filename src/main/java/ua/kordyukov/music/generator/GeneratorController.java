@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-@RequestMapping("/MusicGenerator")
+@RequestMapping("/MusicGeneratorWeb")
 public class GeneratorController {
 
 
@@ -44,7 +44,7 @@ public class GeneratorController {
         threadPad.start();
 
 
-        return "MusicGenerator/Start";
+        return "MusicGeneratorWeb/Start";
 
     }
 
@@ -184,7 +184,7 @@ public class GeneratorController {
                     Guitar guitar24 = new Guitar(0);
 
             }
-            return "MusicGenerator/garmonic";
+            return "MusicGeneratorWeb/garmonic";
         }
     }
 
@@ -203,7 +203,7 @@ public class GeneratorController {
 
         }
 
-        return "MusicGenerator/OnOff";
+        return "MusicGeneratorWeb/OnOff";
     }
 
 
