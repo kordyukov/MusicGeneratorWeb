@@ -7,9 +7,9 @@ import javax.sound.midi.Synthesizer;
 
 public class GuitarRythm implements Runnable {
 
-    private int volume = 55;
+    private int volume = 90;
     private int chanel = 6;
-    private int guitar = 25;
+    private int guitar = 26;
     Bass note = new Bass();
     RandomNotesGuitar randomNotesGuitar = new RandomNotesGuitar();
 

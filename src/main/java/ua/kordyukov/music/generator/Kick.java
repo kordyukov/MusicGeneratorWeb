@@ -5,7 +5,7 @@ import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
 
 public class Kick {
-    private int volume = 80;
+    private int volume = 95;
     private int chanel = 9;
     private int kick = 36;
     static private int note = 36;

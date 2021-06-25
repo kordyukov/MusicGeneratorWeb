@@ -1,5 +1,6 @@
 <html>
-<body bgcolor="#05CF14">
+
+<body bgcolor="#00FF7F">
 <body>
 
 <h1 align="center">Music Generator</h1>

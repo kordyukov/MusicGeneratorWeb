@@ -5,7 +5,7 @@ import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
 
 public class Snare {
-    private int volume = 80;
+    private int volume = 85;
     private int chanel = 9;
     private int snare = 38;
     private int note = 48;

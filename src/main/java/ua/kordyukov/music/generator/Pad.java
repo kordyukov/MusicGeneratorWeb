@@ -5,9 +5,9 @@ import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
 
 public class Pad implements Runnable {
-    private int volume = 55;
+    private int volume = 90;
     private int chanel = 5;
-    private int Pad = 90;
+    private int Pad = 35;
     Bass note = new Bass();
     RandomNotesGuitar randomNotesGuitar = new RandomNotesGuitar();
 

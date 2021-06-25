@@ -5,7 +5,7 @@ import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Synthesizer;
 
 public class Hat {
-    private int volume = 65;
+    private int volume = 70;
     private int chanel = 9;
     private int hat = 42;
     static private int note = 42;

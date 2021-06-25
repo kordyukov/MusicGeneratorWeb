@@ -6,7 +6,7 @@ import javax.sound.midi.Synthesizer;
 
 public class Guitar implements Runnable {
 
-  private int volume = 65;
+  private int volume = 90;
   private int chanel = 6;
   private int guitar = 1;
   static private int note = 36;
